@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView style="@style/SheetTitleStyle" />
+        <ImageView android:id="@id/imgCancelDetailsPilot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_sheet" android:layout_alignParentTop="true" android:layout_marginEnd="26.0dip" android:layout_alignParentEnd="true" app:layout_anchor="@id/tvSheetTitle" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvOrderId" android:text="@string/orderNumber" style="@style/TvDialogOrderStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tvOrderIdValue" android:text="24568" style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/greyLightBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvOrderTimeDialog" android:text="@string/tvOrderTime" style="@style/TvDialogOrderStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <TextView android:textStyle="normal" android:gravity="center" android:id="@id/tvTimeZonePilotSheet" android:text=" 00:00" android:paddingStart="4.0dip" style="@style/TvSheetDialogStyle2" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvOrderDateDialog" android:text="@string/tvOrderDate" style="@style/TvDialogOrderStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tvOrderDateValue" android:text="2018/12/12" style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/greyLightBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvOrderClientName" android:text="@string/tvOrderClientName" style="@style/TvDialogOrderStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tvOrderClientValue" android:text="User Name" style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvOrderAddress" android:text="@string/tvOrderAddress" style="@style/TvDialogOrderStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tvOrderAddressValue" android:text="العنوان هنا كاملا , رقم الدور , رقم الشقة" style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/greyLightBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvOrderPrice" android:text="@string/tvOrderPrice" style="@style/TvDialogOrderStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tvOrderPriceValue" android:text="2000 جنيه" style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvDeliveryPrice" android:text="@string/tvDeliveryPrice" style="@style/TvDialogOrderStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tvDeliveryPriceValue" android:text="2000 جنيه" style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/greyLightBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvOrderPoints" android:text="@string/tvOrderPoints" style="@style/TvDialogOrderStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tvOrderPointsValue" android:text="10" style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvPilotRate" android:text="@string/tvRateRest" style="@style/TvDialogOrderStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <RatingBar android:theme="@style/RatingBarTheme" android:id="@id/rateBarPilot" style="@style/RatingBarStyle" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

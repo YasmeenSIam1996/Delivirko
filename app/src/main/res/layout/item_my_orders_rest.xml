@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/containerBillRest" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:id="@id/tvOrderIdRest" android:text="666666" android:fontFamily="@font/droid_arabic_kufi_bold" style="@style/OrdersTableTextStyle" />
+    <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:id="@id/tvOrderTimeRest" android:text="02:458888" android:fontFamily="@font/droid_arabic_kufi_bold" style="@style/OrdersTableTextStyle" />
+    </LinearLayout>
+    <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tvOrderDateRest" android:text="20/20/2020" android:fontFamily="@font/droid_arabic_kufi_bold" style="@style/OrdersTableTextStyle" />
+    <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tvPilotNameRest" android:text="محمد جمال" style="@style/OrdersTableTextStyle" />
+    <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_go_to_details" android:layout_weight="0.25" />
+</LinearLayout>

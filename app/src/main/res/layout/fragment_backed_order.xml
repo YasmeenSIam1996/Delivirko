@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/week_arrows_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/btnOlderBackedOrders" android:background="@drawable/button_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_left" android:scaleType="centerCrop" />
+            <TextView android:text="@string/tvOlderOrders" style="@style/textArrowsStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/btnNewerBackedOrders" android:background="@drawable/button_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:scaleType="centerCrop" />
+            <TextView android:id="@id/tvNewerOrders" android:text="@string/tvNewerOrders" style="@style/textArrowsStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+            <TextView android:id="@id/tvPilotNameBackedOrders" android:text="محمد جمال" style="@style/LayoutArrowsTitleStyle" />
+            <TextView android:id="@id/tvNoBackedOrders" android:text="20 / 100" style="@style/OrderCounterStyle" />
+            <TextView android:id="@id/tvDateBackedOrders" android:text="2019/12/12 - 2019/12/12" style="@style/WeekDateStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/orderNumber" style="@style/OrdersTableTextStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:text="@string/tvOrderTime" style="@style/OrdersTableTextStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:text="@string/tvOrderDate" style="@style/OrdersTableTextStyle" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/pagerBackedOrders" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="rtl"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/greyLightBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/faq_arrow" android:layout_marginStart="@dimen/faq_marginH" />
+        <TextView android:textSize="@dimen/faqTvSize" android:id="@id/tvFaqQuestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/faq_marginV" android:layout_marginBottom="@dimen/faq_marginV" android:text=" " android:layout_marginStart="7.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/faqTvSize" android:id="@id/tvFaqAnswer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/faq_marginV" android:layout_marginBottom="@dimen/faq_marginV" android:text="" android:lineSpacingExtra="@dimen/spacingBetweenLines" android:textIsSelectable="true" android:layout_marginStart="@dimen/faq_marginH" android:layout_marginEnd="@dimen/faq_marginH" />
+</LinearLayout>

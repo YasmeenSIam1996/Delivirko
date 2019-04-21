@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@drawable/delivery_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+    <ImageView android:layout_marginTop="142.0dip" android:layout_centerHorizontal="true" style="@style/MainLogo" />
+    <TextView android:textSize="@dimen/tvHintSize" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="27.0dip" android:text="@string/logInAs" android:layout_above="@id/layoutPilot" android:layout_centerHorizontal="true" />
+    <LinearLayout android:id="@id/layoutClient" android:layout_marginBottom="35.0dip" android:layout_toRightOf="@id/layoutPilot" style="@style/BtnSelectAct">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_act_client" style="@style/ImageSelectActivity" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selectActClient" style="@style/TvServiceType" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/layoutPilot" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="35.0dip" android:layout_centerHorizontal="true" style="@style/BtnSelectAct">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_act_pilot" style="@style/ImageSelectActivity" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selectActPilot" style="@style/TvServiceType" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/layoutRest" android:layout_marginBottom="35.0dip" android:layout_toLeftOf="@id/layoutPilot" style="@style/BtnSelectAct">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_act_rest" style="@style/ImageSelectActivity" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selectActRest" style="@style/TvServiceType" />
+    </LinearLayout>
+</RelativeLayout>

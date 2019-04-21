@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel" android:background="@drawable/dialog_shape" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_centerInParent="true" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/logo_out" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <Button android:textColor="#ff676767" android:id="@id/no" android:background="@drawable/no_back" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/NO" android:layout_weight="1.0" android:layout_marginEnd="9.199982dip" />
+            <Button android:textColor="@android:color/white" android:id="@id/yes" android:background="@drawable/yes_back" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/YES" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

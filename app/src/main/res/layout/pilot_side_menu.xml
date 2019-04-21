@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tvMenu" android:layout_marginTop="17.0dip" android:text="@string/NavMenu" android:layout_centerHorizontal="true" style="@style/TitleMenuStyle" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutPilotName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_below="@id/tvMenu" android:layout_alignParentStart="true">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/imgRestaurantLogo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/brand_logo" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:riv_corner_radius="20.0dip" app:riv_mutate_background="true" />
+        <TextView android:id="@id/tvMenuPilotName" android:text="اسم الطيار" android:layout_marginStart="@dimen/marginStartTitleMenu" style="@style/TitleMenuStyle" />
+    </LinearLayout>
+    <ScrollView android:id="@id/sv_right_menu" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/layoutSignOutPilot" android:layout_below="@id/layoutPilotName" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_right_menu" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/pilotNavMain" android:layout_marginTop="60.0dip" style="@style/ItemLayoutMenuStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nav_home" />
+                <TextView android:text="@string/main" style="@style/ItemMenuTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/pilotNavOrders" style="@style/ItemLayoutMenuStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nav_orders" />
+                <TextView android:text="@string/orders" style="@style/ItemMenuTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/pilotNavAccount" style="@style/ItemLayoutMenuStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nav_bill" />
+                <TextView android:text="@string/account" style="@style/ItemMenuTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/pilotNavSettings" style="@style/ItemLayoutMenuStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nav_settings" />
+                <TextView android:text="@string/settings" style="@style/ItemMenuTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/pilotNavConditions" style="@style/ItemLayoutMenuStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nav_conditions" />
+                <TextView android:text="@string/rulesConditions" style="@style/ItemMenuTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutSignOutPilot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sign_out" />
+        <TextView android:id="@id/txtLogout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signOut" android:layout_marginStart="@dimen/marginStartTitleMenu" style="@style/TitleMenuStyle" />
+    </LinearLayout>
+</RelativeLayout>

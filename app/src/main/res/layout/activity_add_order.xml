@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/greyDarkBg2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/appBr" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+            <TextView android:textSize="@dimen/addOrderTxtSize" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/spinnerCity" android:background="@drawable/spinner_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/city" android:drawableEnd="@drawable/ic_arrow_drop_down" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+            <EditText android:id="@id/txtStreet" android:hint="@string/street" android:inputType="text" style="@style/AddOrderTxtStyle" />
+            <EditText android:id="@id/txtSpecialMark" android:hint="@string/specialMark" android:inputType="text" style="@style/AddOrderTxtStyle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/txtBuildingNo" android:layout_width="0.0dip" android:hint="@string/buildingNo" android:layout_weight="1.0" android:inputType="number" android:fontFamily="@font/droid_arabic_kufi" android:layout_marginEnd="@dimen/buildingMarginH" style="@style/AddOrderTxtStyle" />
+                <EditText android:id="@id/txtFloorNo" android:layout_width="0.0dip" android:hint="@string/floorNo" android:layout_weight="1.0" android:inputType="number" android:fontFamily="@font/droid_arabic_kufi" android:layout_marginStart="@dimen/buildingMarginH" android:layout_marginEnd="@dimen/buildingMarginH" style="@style/AddOrderTxtStyle" />
+                <EditText android:id="@id/txtFlatNo" android:layout_width="0.0dip" android:hint="@string/flatNo" android:layout_weight="1.0" android:inputType="number" android:fontFamily="@font/droid_arabic_kufi" android:layout_marginStart="@dimen/buildingMarginH" style="@style/AddOrderTxtStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/txtMapAddress" android:background="@drawable/address_on_map_bg" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" style="@style/AddOrderTxtStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_on" />
+                <TextView android:textColor="@color/colorPrimary" android:id="@id/tvLocationOnMAp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/AddressOnMap" android:layout_weight="1.0" android:layout_marginStart="10.0dip" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_map" />
+            </LinearLayout>
+            <EditText android:id="@id/txtClientName" android:layout_marginTop="0.0dip" android:hint="@string/clientName" android:maxLines="1" android:minLines="1" android:inputType="text" style="@style/AddOrderTxtStyle" />
+            <EditText android:id="@id/txtMobileAddOrder" android:hint="@string/mobile" android:inputType="phone" android:fontFamily="@font/droid_arabic_kufi" style="@style/AddOrderTxtStyle" />
+            <EditText android:id="@id/txtOrderValue" android:hint="@string/orderValue" android:inputType="numberDecimal" android:fontFamily="@font/droid_arabic_kufi" style="@style/AddOrderTxtStyle" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/cost_layout_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:fontFamily="@font/droid_arabic_kufi" android:paddingStart="10.0dip" android:paddingEnd="5.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_money" />
+                <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/deliveryCost" android:layout_weight="1.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+                <EditText android:textSize="15.0sp" android:gravity="center" android:id="@id/price_range" android:background="@drawable/txt_bg" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_map" android:hint="00 - 00" android:fontFamily="@font/droid_arabic_kufi" />
+            </LinearLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/radio" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:textColor="@drawable/radiobutton_color_selector" android:id="@id/rbCash" android:background="@drawable/radiobutton_bg" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/addOrderMarginH" android:checked="true" android:text="@string/cash" android:layout_weight="1.0" android:layout_marginEnd="5.0dip" />
+                <RadioButton android:textColor="@drawable/radiobutton_color_selector" android:id="@id/rbEPay" android:background="@drawable/radiobutton_bg" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/addOrderMarginH" android:checked="false" android:text="@string/ePay" android:layout_weight="1.0" android:layout_marginStart="5.0dip" />
+            </RadioGroup>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/addOrderMarginH">
+                <Switch android:theme="@style/SwitchTheme" android:id="@id/PaymentSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:tint="#ff00920b" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="باقي لك 4 رحلات جانية حتى تاريخ" android:layout_marginStart="10.0dip" />
+                <TextView android:textColor="@color/colorRedDelivirko" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/1/2005" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <Button android:textColor="@android:color/white" android:id="@id/save" android:background="@drawable/cart_btn_shape" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="10.0dip" android:text="@string/SAVE_CONTINUE" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

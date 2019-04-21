@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/greyLightBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout style="@style/LayoutArrowsStyle">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layoutArrowMarginH" android:layout_marginTop="@dimen/layoutArrowMarginV" android:layout_marginBottom="@dimen/layoutArrowMarginV" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layoutDirection="ltr">
+            <ImageButton android:id="@id/btnOlderBillRest" android:background="@drawable/button_round_rest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_left" android:scaleType="centerCrop" />
+            <TextView android:textSize="@dimen/arrowsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvOlderOrders" android:layout_marginStart="7.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layoutArrowMarginH" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layoutDirection="ltr">
+            <TextView android:textSize="@dimen/arrowsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvNewerOrders" android:layout_marginEnd="7.0dip" />
+            <ImageButton android:id="@id/btnNewerBillRest" android:background="@drawable/button_round_rest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.makeramen.roundedimageview.RoundedImageView android:id="@id/ResImage" android:layout_width="@dimen/roundImgRestSize" android:layout_height="@dimen/roundImgRestSize" android:src="@drawable/brand_logo" app:riv_oval="true" />
+                <TextView android:id="@id/tvRestNameBill" android:text="برجر كينغ" style="@style/LayoutArrowsTitleStyle" />
+            </LinearLayout>
+            <TextView android:id="@id/tvWeekBillRest" android:text="0000/0/0  -  0000/0/0" style="@style/WeekDateStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/tvOrderDate" style="@style/OrdersTableTextStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:text="@string/totalOrders" style="@style/OrdersTableTextStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:text="@string/tvOrderIsPayed" android:layout_weight="0.7" style="@style/OrdersTableTextStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:text="@string/transferToCash" android:layout_weight="1.2" style="@style/OrdersTableTextStyle" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/rvBillRest" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white" android:text="@string/tvTotal" style="@style/OrdersTableTextStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/totalPrice" android:text="Price" android:fontFamily="@font/droid_arabic_kufi" style="@style/OrdersTableTextStyle" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_payed_border" android:layout_weight="0.7" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_not_payed" android:layout_weight="1.2" />
+    </LinearLayout>
+</LinearLayout>

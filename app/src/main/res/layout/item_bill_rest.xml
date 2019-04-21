@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/containerBillRest" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:id="@id/tvDateBillRest" android:text="12/12/2012" android:fontFamily="@font/droid_arabic_kufi_bold" style="@style/OrdersTableTextStyle" />
+    <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tvTotalOrderBill" android:text="22555" android:fontFamily="@font/droid_arabic_kufi_bold" style="@style/OrdersTableTextStyle" />
+    <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/imgIsPayedBillRest" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_not_payed" android:layout_weight="0.7" />
+    <View android:background="@color/greyDividerTabs" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.2">
+        <ImageView android:id="@id/imgIsTransferred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_not_payed" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_go_to_details" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

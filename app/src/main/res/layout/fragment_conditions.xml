@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" style="@style/fragRestStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="240.0dip">
+        <ImageView android:background="@drawable/delivery_bg2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_centerInParent="true" android:layout_centerHorizontal="true" style="@style/MainLogo" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:overScrollMode="never" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <TextView android:textSize="@dimen/textConditionsSize" android:textStyle="bold" android:id="@id/tvConditions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/spacingBetweenLines" />
+    </ScrollView>
+    <Button android:id="@id/btnAgreeConditions" android:layout_width="fill_parent" android:layout_height="@dimen/btnHeight" android:layout_marginBottom="@dimen/edit_text_marginH" android:text="@string/agree" android:layout_marginStart="120.0dip" android:layout_marginEnd="120.0dip" style="@style/ButtonStyleActivity" />
+</LinearLayout>

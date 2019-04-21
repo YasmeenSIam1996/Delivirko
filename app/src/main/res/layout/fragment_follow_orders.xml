@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/fragRestStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/tableHeaderHeight">
+        <TextView android:textSize="13.0sp" android:layout_width="@dimen/textOrderNoWidth" android:layout_height="wrap_content" android:text="@string/orderNumber" android:paddingStart="@dimen/dotsLineWidth" android:paddingEnd="5.0dip" />
+        <View android:background="@color/greyDividerTabs" android:layout_width="@dimen/dividerSize" android:layout_height="fill_parent" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pilotInfo" android:layout_marginStart="@dimen/pilotDataMarginH" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/rvFollowOrders" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_p_login" android:background="@drawable/delivery_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <android.support.design.widget.TextInputLayout android:id="@id/txtPilotMobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_above="@id/txtPilotPass" app:hintEnabled="false">
+            <android.support.v7.widget.AppCompatEditText android:id="@id/edt_mobile" android:hint="@string/mobile_no" android:inputType="phone" style="@style/TxtStyleWhiteBg" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/txtPilotPass" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignBottom="@id/img_p_login" app:hintEnabled="false" app:passwordToggleDrawable="@drawable/show_password" app:passwordToggleEnabled="true">
+            <android.support.v7.widget.AppCompatEditText android:id="@id/edt_password" android:hint="@string/password" android:inputType="textPassword" style="@style/TxtStyleWhiteBg" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvPilotLogin" android:layout_above="@id/txtPilotMobile" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/imgPilotLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="85.0dip" android:src="@drawable/pilot_logo" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="@drawable/deliverko" android:layout_below="@id/imgPilotLogo" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/tvForgetPilot" android:text="@string/tvForgetPass" android:layout_below="@id/txtPilotPass" style="@style/ForgetStyle" />
+        <Button android:id="@id/btnLoginPilot" android:layout_width="fill_parent" android:layout_margin="@dimen/edit_text_marginH" android:layout_marginBottom="20.0dip" android:text="@string/btnLogin" android:layout_alignParentBottom="true" style="@style/ButtonStyleActivity" />
+    </RelativeLayout>
+</ScrollView>

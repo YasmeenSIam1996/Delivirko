@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_marginStart="15.0dip" android:layout_marginEnd="4.0dip" style="@style/ItemBillStyle">
+                    <TextView android:text="@string/tvRateBill" style="@style/TitleBillItemStyle" />
+                    <TextView android:id="@id/tvRateBill" android:text="4.5/5" style="@style/ValueItemBill" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginStart="4.0dip" android:layout_marginEnd="15.0dip" style="@style/ItemBillStyle">
+                    <TextView android:text="@string/workHours" style="@style/TitleBillItemStyle" />
+                    <TextView android:id="@id/tvWorksHoursBill" android:text="70" style="@style/ValueItemBill" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_marginStart="15.0dip" android:layout_marginEnd="4.0dip" style="@style/ItemBillStyle">
+                    <TextView android:text="@string/tvPointNo" style="@style/TitleBillItemStyle" />
+                    <TextView android:id="@id/tvPointNo" android:text="70" style="@style/ValueItemBill" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginStart="4.0dip" android:layout_marginEnd="15.0dip" style="@style/ItemBillStyle">
+                    <TextView android:text="@string/tvNoOfOrders" style="@style/TitleBillItemStyle" />
+                    <TextView android:id="@id/tvNoOfOrders" android:text="60" style="@style/ValueItemBill" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_marginStart="15.0dip" android:layout_marginEnd="4.0dip" style="@style/ItemBillStyle">
+                    <TextView android:text="@string/tvCompleteOrders" style="@style/TitleBillItemStyle" />
+                    <TextView android:id="@id/tvComplete" android:text="90%" style="@style/ValueItemBill" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginStart="4.0dip" android:layout_marginEnd="15.0dip" style="@style/ItemBillStyle">
+                    <TextView android:text="@string/tvAcceptance" style="@style/TitleBillItemStyle" />
+                    <TextView android:id="@id/tvAcceptance" android:text="20%" style="@style/ValueItemBill" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/RowBillWhite">
+                <TextView android:text="@string/ordersIncome" style="@style/BillDataTitleStyle" />
+                <TextView android:id="@id/tvOrdersIncome" android:text="550" style="@style/DataValueBillStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/RowBillGrey">
+                <TextView android:text="@string/reward" style="@style/BillDataTitleStyle" />
+                <TextView android:id="@id/tvReward" android:text="2" style="@style/DataValueBillStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/RowBillWhite">
+                <TextView android:text="@string/ensure" style="@style/BillDataTitleStyle" />
+                <TextView android:id="@id/tvEnsure" android:text="9" style="@style/DataValueBillStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/RowBillGrey">
+                <TextView android:text="@string/canceled" style="@style/BillDataTitleStyle" />
+                <TextView android:textColor="@color/colorRedDelivirko" android:id="@id/tvCanceledTrips" android:text="550" style="@style/DataValueBillStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/RowBillWhite">
+                <TextView android:text="@string/officeFee" style="@style/BillDataTitleStyle" />
+                <TextView android:textColor="@color/colorRedDelivirko" android:id="@id/tvOfficeFee" android:text="550" style="@style/DataValueBillStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/RowBillGrey">
+                <TextView android:text="@string/bagBill" style="@style/BillDataTitleStyle" />
+                <TextView android:textColor="@color/colorRedDelivirko" android:id="@id/tvOrderTimeDialog" android:text="550" style="@style/DataValueBillStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/RowBillWhite">
+                <TextView android:text="@string/ePayServices" style="@style/BillDataTitleStyle" />
+                <TextView android:textColor="@color/colorRedDelivirko" android:id="@id/tvEPay" android:text="550" style="@style/DataValueBillStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/RowBillGrey">
+                <TextView android:text="@string/totalMoney" style="@style/BillDataTitleStyle" />
+                <TextView android:textColor="@color/colorRedDelivirko" android:id="@id/tvTotalMoney" android:text="550" style="@style/DataValueBillStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/yourWeekBalance" android:layout_weight="1.0" android:layout_marginStart="30.0dip" />
+        <TextView android:textSize="@dimen/balanceSize" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tvWeekBalance" android:background="@drawable/balance_bg" android:paddingTop="@dimen/paddingBalanceV" android:paddingBottom="@dimen/paddingBalanceV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/paddingBalanceH" android:text="550" android:paddingStart="@dimen/paddingBalanceH" android:paddingEnd="@dimen/paddingBalanceH" />
+        <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/currencyJeneh" android:layout_marginEnd="@dimen/currencyJenehH" />
+    </LinearLayout>
+</LinearLayout>
